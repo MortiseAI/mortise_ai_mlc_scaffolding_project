@@ -1,5 +1,5 @@
 import {AnnMlcAction, AnnMlcSidecar, AnnMlcState, BaseMlcVirtual, MlcComponentMortiseConfig, MlcComponentProxy, MlcStateEvent} from "@mai-alpha/mai-mlc-core-tsm";
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {MaiMainDialogComponent} from "./MaiMainDialogComponent";
 import {MaiMainDialogActionKeys} from "./action/MaiMainDialogActionKeys";
 import {MaiMainDialogStateKeys} from "./state/MaiMainDialogStateKeys";

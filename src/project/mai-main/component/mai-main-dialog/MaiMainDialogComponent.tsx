@@ -1,7 +1,6 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./less/mai-main-dialog.less"
 import {Modal} from "antd";
-import {CloseOutlined} from "@ant-design/icons";
 
 export function MaiMainDialogComponent(props: any) {
 
@@ -35,10 +34,6 @@ export function MaiMainDialogComponent(props: any) {
             <div className="mai_main_dialog_container">
                 <div className="mai_main_dialog_head_container">
                     <span className='mai_main_dialog_title_txt'>MainDialog</span>
-                    <CloseOutlined className='mai_main_dialog_title_close'
-                                   onClick={() => {
-                                       props.handleOpen(false)
-                                   }}/>
                 </div>
                 <div className='mai_main_dialog_content_container'>
                     <span className='mai_main_dialog_content_txt'>{`${props.content}`}</span>

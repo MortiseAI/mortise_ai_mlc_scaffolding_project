@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import "./less/mai-main-box.less"
 import logo from '../../../../../res/mai_main_logo.png';
 
