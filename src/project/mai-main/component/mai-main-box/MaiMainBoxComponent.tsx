@@ -11,7 +11,7 @@ export function MaiMainBoxComponent(props: any) {
     return (
         <div className='mai_main_box_container'>
             <img className='mai_main_box_logo_icon' src={logo}/>
-            <span className='mai_main_box_slogan_txt'>Make a Difference</span>
+            <span className='mai_main_box_slogan_txt'>{`MortiseAI\nMake a Difference`}</span>
             <button className="mai_main_box_btn"
                     onClick={() => {
                         props.handleMainBoxClick()

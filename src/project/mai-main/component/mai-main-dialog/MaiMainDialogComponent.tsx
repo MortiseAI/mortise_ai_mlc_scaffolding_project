@@ -24,20 +24,15 @@ export function MaiMainDialogComponent(props: any) {
         <Modal width={500}
                zIndex={zIndex}
                open={open}
-               destroyOnClose={true}
-               centered={true}
                footer={null}
+               closable={false}
+               destroyOnClose={true}
                bodyStyle={{padding: 0}}
                onCancel={() => {
                    props.handleOpen(false)
                }}>
             <div className="mai_main_dialog_container">
-                <div className="mai_main_dialog_head_container">
-                    <span className='mai_main_dialog_title_txt'>MainDialog</span>
-                </div>
-                <div className='mai_main_dialog_content_container'>
-                    <span className='mai_main_dialog_content_txt'>{`${props.content}`}</span>
-                </div>
+                <span className='mai_main_dialog_txt'>{`${props.content}`}</span>
             </div>
         </Modal>
     )

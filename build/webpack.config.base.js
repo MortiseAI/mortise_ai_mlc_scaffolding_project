@@ -5,8 +5,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 module.exports = {
 
     entry: {
-        home: './src/project/mai-home/mai-home-page',
-        vcode: './src/project/mai-vcode/mai-vcode-page',
+        main: './src/project/mai-main/mai-main-page',
     },
 
     module: {
@@ -67,22 +66,16 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin({cleanStaleWebpackAssets: false}),
         new HtmlWebpackPlugin({
-            title: 'MortiseAI | Home',
+            title: 'MortiseAI | Main',
             filename: 'index.html',
             template: path.resolve(__dirname, '../index.html'),
-            chunks: ['home']
+            chunks: ['main']
         }),
         new HtmlWebpackPlugin({
-            title: 'MortiseAI | Home',
-            filename: 'home.html',
-            template: path.resolve(__dirname, '../src/project/mai-home/mai-home-page.html'),
-            chunks: ['home']
-        }),
-        new HtmlWebpackPlugin({
-            title: 'MortiseAI | VerificationCode',
-            filename: 'vcode.html',
-            template: path.resolve(__dirname, '../src/project/mai-vcode/mai-vcode-page.html'),
-            chunks: ['vcode']
+            title: 'MortiseAI | Main',
+            filename: 'main.html',
+            template: path.resolve(__dirname, '../src/project/mai-main/mai-main-page.html'),
+            chunks: ['main']
         }),
     ],
 

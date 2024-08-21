@@ -81,7 +81,7 @@ function MaiMainBoxBrickProxyComponent(props: any) {
 
     const handleMainBoxClick = () => {
         const model = new MaiMainBoxActionModel()
-        model.content = "Hello World !"
+        model.content = "Hello World"
         props.sender.sendAction({message: MaiMainBoxActionKeys.MAI_MAIN_BOX_CLICK, model: model})
     }
 
